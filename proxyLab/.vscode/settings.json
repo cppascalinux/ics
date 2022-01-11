@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"*.ys": "asm-collection",
+		"csapp.h": "c",
+		"random": "c",
+		"*.tcc": "c"
+	}
+}

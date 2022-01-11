@@ -1,0 +1,12 @@
+
+a.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <fun>:
+   0:	48 8b 07             	movq   (%rdi),%rax
+   3:	48 8b 16             	movq   (%rsi),%rdx
+   6:	48 89 17             	movq   %rdx,(%rdi)
+   9:	48 89 06             	movq   %rax,(%rsi)
+   c:	c3                   	retq   

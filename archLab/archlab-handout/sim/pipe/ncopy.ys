@@ -1,0 +1,228 @@
+# -*- coding: utf-8 -*-
+# 胡晋侨 2000013141
+# 一个比较无脑的实现可以做到大约13CPE
+# 然后首先就可以想到循环展开, 每个循环内进行8个元素的操作, 减少了循环变量以及指针变化所需的指令数, 这样大约能做到9.5CPE
+# 然后就考虑去优化对每个元素操作所需的指令数: 比较朴素的实现是使用条件传送, 共需6条指令:
+# mrmovq (%rdi),%rcx
+# rrmovq %rax,%rbx
+# rmmovq %rcx,(%rsi)
+# iaddq $1,%rbx
+# andq %rcx,%rcx
+# cmovg %rbx,%rax
+# 但明显, 这样需要的指令太多了, 并且时间主要耗费在%rax+1上
+# 实际上, 如果允许自定义全新的指令 ("条件加法"), 则只需要4个时钟周期就能完成对一个元素的操作
+# 我尝试重定义了cmovg为"条件加法", 取得了非常好的效果(CPE<7), 但好像违反了题目的要求QwQ
+# 另一种思路是使用跳转语句:
+# mrmovq (%rdi),%rcx
+# rmmovq %rcx,(%rsi)
+# andq %rcx,%rcx
+# jle Label
+# iaddq $1,%rax
+# Label:
+# (实际上可以在前两条语句之间插入别的语句来避免加载/使用冒险)
+# 这样当%rcx为负数时, 需要4个时钟周期
+# 但当%rcx为正数时, 由于分支预测错误带来的时间浪费, 需要7个时钟周期
+# 假设正数的概率为1/2, 则平均需要5.5个时钟周期, 结合一些奇技淫巧, CPE达到了8.2左右
+# 然后我发现实际上数的正负只与补码位有关, 于是可以让%rcx&=0x8000000000000000, 然后采用条件转移, 和原来是一样的
+# 但这样如果%rcx是个正数, 那么得到的结果就是0, 条件转移即使不转移, 我们把它直接加到%rax上也不会有影响
+# 于是这样写就可以节省一条指令:
+# mrmovq (%rdi),%rcx
+# rmmovq %rcx,(%rsi)
+# andq %r13,%rcx
+# cmovl %r14,%rcx
+# addq %rcx,%rax
+# (实际上可以在前两条语句之间插入别的语句来避免加载/使用冒险)
+# 其中%r13=0x8000000000000000, %r14=-1均为常量, %rax初始即等于%rdx
+# 这样就基本可以做到7.6CPE
+# 然后是对循环展开部分的处理: 注意到CPE是对所有的长度取平均, 而当长度很小时, CPE会很大, 于是很吃亏
+# 于是我首先进行每次处理8个元素的循环, 然后增加单次处理4 2 1个元素的部分, 达到了7.53的CPE
+# 注意到4和2的部分结束之前需要计算指针和剩余长度, 会增加额外时间开销
+# 于是保持4的部分不变, 增加了对3 2 1均单独处理的部分, 处理完直接return, CPE就到了7.47
+# 懒得再优化了QwQ
+#/* $begin ncopy-ys */
+##################################################################
+# ncopy.ys - Copy a src block of len words to dst.
+# Return the number of positive words (>0) contained in src.
+#
+# Include your name and ID here.
+#
+# Describe how and why you modified the baseline code.
+#
+##################################################################
+# Do not modify this portion
+# Function prologue.
+# %rdi = src, %rsi = dst, %rdx = len
+ncopy:
+
+##################################################################
+# 初始化部分
+	rrmovq %rdx,%rax
+	irmovq $0x8000000000000000,%r13
+	irmovq $-1,%r14
+
+begin1:
+# 判断%rdx是否>=8
+	iaddq $-8,%rdx
+	jl begin2
+loop1:
+# 将减掉的8加回来
+	iaddq $8,%rdx
+# 8重循环展开
+	mrmovq (%rdi),%rbx
+	mrmovq 8(%rdi),%rcx
+	rmmovq %rbx,(%rsi)
+	rmmovq %rcx,8(%rsi)
+
+	andq %r13,%rbx
+	cmovl %r14,%rbx
+	addq %rbx,%rax
+	andq %r13,%rcx
+	cmovl %r14,%rcx
+	addq %rcx,%rax
+
+	mrmovq 16(%rdi),%rbx
+	mrmovq 24(%rdi),%rcx
+	rmmovq %rbx,16(%rsi)
+	rmmovq %rcx,24(%rsi)
+
+	andq %r13,%rbx
+	cmovl %r14,%rbx
+	addq %rbx,%rax
+	andq %r13,%rcx
+	cmovl %r14,%rcx
+	addq %rcx,%rax
+
+	mrmovq 32(%rdi),%rbx
+	mrmovq 40(%rdi),%rcx
+	rmmovq %rbx,32(%rsi)
+	rmmovq %rcx,40(%rsi)
+
+	andq %r13,%rbx
+	cmovl %r14,%rbx
+	addq %rbx,%rax
+	andq %r13,%rcx
+	cmovl %r14,%rcx
+	addq %rcx,%rax
+
+	mrmovq 48(%rdi),%rbx
+	mrmovq 56(%rdi),%rcx
+	rmmovq %rbx,48(%rsi)
+	rmmovq %rcx,56(%rsi)
+
+	andq %r13,%rbx
+	cmovl %r14,%rbx
+	addq %rbx,%rax
+	andq %r13,%rcx
+	cmovl %r14,%rcx
+	addq %rcx,%rax
+# 循环展开结束, 指针增加8
+	iaddq $64,%rdi
+	iaddq $64,%rsi
+# 此处是要判断%rdx-8>=8, 故-16, 在循环开头会再加8
+	iaddq $-16,%rdx
+	jge loop1
+
+# 处理长为4的部分
+begin2:
+# 注意到此时%rdx比真实值小8, +4后仍比真实值小4
+	iaddq $4,%rdx
+	jl begin3
+# 四重循环展开
+	mrmovq (%rdi),%rbx
+	mrmovq 8(%rdi),%rcx
+	rmmovq %rbx,(%rsi)
+	rmmovq %rcx,8(%rsi)
+
+	andq %r13,%rbx
+	cmovl %r14,%rbx
+	addq %rbx,%rax
+	andq %r13,%rcx
+	cmovl %r14,%rcx
+	addq %rcx,%rax
+
+	mrmovq 16(%rdi),%rbx
+	mrmovq 24(%rdi),%rcx
+	rmmovq %rbx,16(%rsi)
+	rmmovq %rcx,24(%rsi)
+
+	andq %r13,%rbx
+	cmovl %r14,%rbx
+	addq %rbx,%rax
+	andq %r13,%rcx
+	cmovl %r14,%rcx
+	addq %rcx,%rax
+# 循环展开结束, 指针增加4
+	iaddq $32,%rdi
+	iaddq $32,%rsi
+# 剩余长度-4
+	iaddq $-4,%rdx
+
+# 处理剩余长为3的部分
+begin3:
+# 注意此时%rdx比真实值小4,故+1后小3
+	iaddq $1,%rdx
+	jl begin4
+# 三重循环展开
+	mrmovq (%rdi),%rbx
+	mrmovq 8(%rdi),%rcx
+	mrmovq 16(%rdi),%r8
+	rmmovq %rbx,(%rsi)
+	rmmovq %rcx,8(%rsi)
+	rmmovq %r8,16(%rsi)
+
+	andq %r13,%rbx
+	cmovl %r14,%rbx
+	addq %rbx,%rax
+	andq %r13,%rcx
+	cmovl %r14,%rcx
+	addq %rcx,%rax
+	andq %r13,%r8
+	cmovl %r14,%r8
+	addq %r8,%rax
+# 循环展开结束,直接return
+	ret
+
+# 处理剩余长为2的部分
+begin4:
+# 注意此时%rdx比真实值小3,故+1后小2
+	iaddq $1,%rdx
+	jl begin5
+# 二重循环展开
+	mrmovq (%rdi),%rbx
+	mrmovq 8(%rdi),%rcx
+	rmmovq %rbx,(%rsi)
+	rmmovq %rcx,8(%rsi)
+
+	andq %r13,%rbx
+	cmovl %r14,%rbx
+	addq %rbx,%rax
+	andq %r13,%rcx
+	cmovl %r14,%rcx
+	addq %rcx,%rax
+# 循环展开结束, 直接return
+	ret
+
+# 处理剩余长为1的部分
+begin5:
+# 这里为了避免加载/使用冒险, 改变了指令的顺序
+	mrmovq (%rdi),%rcx
+# 注意此时%rdx比真实值小2,故+1后小1
+	iaddq $1,%rdx
+# 由于PIPE总是选择分支跳转, 故在这里跳转指令与之前相反, 能减少长为1时的总时钟周期数
+	jge L1
+	ret
+L1:
+# 对单个元素进行操作
+	rmmovq %rcx,(%rsi)
+	andq %r13,%rcx
+	cmovl %r14,%rcx
+	addq %rcx,%rax
+##################################################################
+# Do not modify the following section of code
+# Function epilogue.
+Done:
+	ret
+##################################################################
+# Keep the following label at the end of your function
+End:
+#/* $end ncopy-ys */

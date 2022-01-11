@@ -1,0 +1,57 @@
+                            | # 胡晋侨 2000013141
+0x000:                      | .pos 0
+0x000: 30f40002000000000000 | irmovq stack,%rsp
+0x00a: 30f72800000000000000 | irmovq Array,%rdi
+0x014: 30f60600000000000000 | irmovq $6,%rsi
+0x01e: 805800000000000000   | call bubble_sort
+0x027: 00                   | halt
+                            | 
+0x028:                      | .align 8
+0x028:                      | Array:
+0x028: ca0b000000000000     | 	.quad 0xbca
+0x030: ba0c000000000000     | 	.quad 0xcba
+0x038: cb0a000000000000     | 	.quad 0xacb
+0x040: ab0c000000000000     | 	.quad 0xcab
+0x048: bc0a000000000000     | 	.quad 0xabc
+0x050: ac0b000000000000     | 	.quad 0xbac
+                            | 
+0x058:                      | bubble_sort: # data in %rdi, count in %rsi, i in %rdx, last in %rcx
+0x058: a03f                 | 	pushq %rbx
+0x05a: a05f                 | 	pushq %rbp
+0x05c: 2071                 | 	rrmovq %rdi,%rcx
+0x05e: 6066                 | 	addq %rsi,%rsi
+0x060: 6066                 | 	addq %rsi,%rsi
+0x062: 6066                 | 	addq %rsi,%rsi
+0x064: 6061                 | 	addq %rsi,%rcx
+0x066: 30f80800000000000000 | 	irmovq $8,%r8
+0x070: 6181                 | 	subq %r8,%rcx
+0x072: 70ce00000000000000   | 	jmp test1
+0x07b:                      | loop1:
+0x07b: 2072                 | 	rrmovq %rdi,%rdx
+0x07d: 70bd00000000000000   | 	jmp test2
+0x086:                      | loop2:
+0x086: 50020800000000000000 | 	mrmovq 8(%rdx),%rax
+0x090: 50320000000000000000 | 	mrmovq (%rdx),%rbx
+0x09a: 2005                 | 	rrmovq %rax,%rbp
+0x09c: 6130                 | 	subq %rbx,%rax
+0x09e: 75bb00000000000000   | 	jge L1
+0x0a7: 40320800000000000000 | 	rmmovq %rbx,8(%rdx)
+0x0b1: 40520000000000000000 | 	rmmovq %rbp,(%rdx)
+0x0bb:                      | L1:
+0x0bb: 6082                 | 	addq %r8,%rdx
+0x0bd:                      | test2:
+0x0bd: 2019                 | 	rrmovq %rcx,%r9
+0x0bf: 6121                 | 	subq %rdx,%rcx
+0x0c1: 2091                 | 	rrmovq %r9,%rcx
+0x0c3: 768600000000000000   | 	jg loop2
+0x0cc: 6181                 | 	subq %r8,%rcx
+0x0ce:                      | test1:
+0x0ce: 2019                 | 	rrmovq %rcx,%r9
+0x0d0: 6171                 | 	subq %rdi,%rcx
+0x0d2: 2091                 | 	rrmovq %r9,%rcx
+0x0d4: 767b00000000000000   | 	jg loop1
+0x0dd: b05f                 | 	popq %rbp
+0x0df: b03f                 | 	popq %rbx
+0x0e1: 90                   | 	ret
+0x200:                      | .pos 0x200
+0x200:                      | stack:

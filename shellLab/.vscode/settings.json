@@ -1,0 +1,14 @@
+{
+	"files.associations": {
+		"*.ys": "asm-collection",
+		"fcntl.h": "c",
+		"errno.h": "c",
+		"wait.h": "c",
+		"stdarg.h": "c",
+		"stdlib.h": "c",
+		"unistd.h": "c",
+		"string.h": "c",
+		"ctype.h": "c",
+		"signal.h": "c"
+	}
+}

@@ -1,0 +1,555 @@
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: Òπ„º˝πÓ¿9*JTell me somethin. If you please me, I'll let you pass the test.
+i:0 can:f1
+i:1 can:b9
+i:2 can:e3
+i:3 can:bc
+i:4 can:fd
+i:5 can:b9
+i:6 can:ee
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î‘˘ÒvU
+i:7 ad:00
+i:6 ad:00
+i:5 ad:55
+i:4 ad:76
+i:3 ad:f1
+i:2 ad:f9
+i:1 ad:d4
+i:0 ad:94
+addr:5576f1f9d494
+addr:5576f1f9d229
+i:0 ad:29
+i:1 ad:d2
+i:2 ad:f9
+i:3 ad:f1
+i:4 ad:76
+i:5 ad:55
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: You win
+12The target string is: You win
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: ÖR≤ì|∞Äp=Tell me somethin. If you please me, I'll let you pass the test.
+i:0 can:85
+i:1 can:52
+i:2 can:b2
+i:3 can:93
+i:4 can:7c
+i:5 can:b0
+i:6 can:80
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î4m∆˛U
+i:7 ad:00
+i:6 ad:00
+i:5 ad:55
+i:4 ad:fe
+i:3 ad:c6
+i:2 ad:6d
+i:1 ad:34
+i:0 ad:94
+addr:55fec66d3494
+addr:55fec66d3229
+i:0 ad:29
+i:1 ad:32
+i:2 ad:6d
+i:3 ad:c6
+i:4 ad:fe
+i:5 ad:55
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: I'll give you another chance.
+11The target string is: I'll give you another chance.
+12The target string is: I'll give you another chance.
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: )∂—ÛGâ‡ìÛÃTell me somethin. If you please me, I'll let you pass the test.
+i:0 can:29
+i:1 can:b6
+i:2 can:01
+i:3 can:d1
+i:4 can:f3
+i:5 can:47
+i:6 can:89
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î‰ˆ⁄¢U
+i:7 ad:00
+i:6 ad:00
+i:5 ad:55
+i:4 ad:a2
+i:3 ad:da
+i:2 ad:f6
+i:1 ad:e4
+i:0 ad:94
+addr:55a2daf6e494
+addr:55a2daf6e229
+i:0 ad:29
+i:1 ad:e2
+i:2 ad:f6
+i:3 ad:da
+i:4 ad:a2
+i:5 ad:55
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: You win
+12The target string is: You win
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: äÍK˙ö,ú∞t%ùTell me somethin. If you please me, I'll let you pass the test.
+i:0 can:8a
+i:1 can:ea
+i:2 can:4b
+i:3 can:fa
+i:4 can:9a
+i:5 can:2c
+i:6 can:9c
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: îÑP*¶U
+i:7 ad:00
+i:6 ad:00
+i:5 ad:55
+i:4 ad:a6
+i:3 ad:2a
+i:2 ad:50
+i:1 ad:84
+i:0 ad:94
+addr:55a62a508494
+addr:55a62a508229
+i:0 ad:29
+i:1 ad:82
+i:2 ad:50
+i:3 ad:2a
+i:4 ad:a6
+i:5 ad:55
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: You win
+12The target string is: You win
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: Gã´£ÿ“∞=9¶Tell me somethin. If you please me, I'll let you pass the test.
+i:0 can:47
+i:1 can:19
+i:2 can:8b
+i:3 can:ab
+i:4 can:a3
+i:5 can:d8
+i:6 can:d2
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î¥œ*V
+i:7 ad:00
+i:6 ad:00
+i:5 ad:56
+i:4 ad:1b
+i:3 ad:2a
+i:2 ad:cf
+i:1 ad:b4
+i:0 ad:94
+addr:561b2acfb494
+addr:561b2acfb229
+i:0 ad:29
+i:1 ad:b2
+i:2 ad:cf
+i:3 ad:2a
+i:4 ad:1b
+i:5 ad:56
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: You win
+12The target string is: You win
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: ^“ÄG`ˆ∏ÒTell me somethin. If you please me, I'll let you pass the test.
+i:0 can:5e
+i:1 can:d2
+i:2 can:80
+i:3 can:47
+i:4 can:60
+i:5 can:f6
+i:6 can:b8
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î° WU
+i:7 ad:00
+i:6 ad:00
+i:5 ad:00
+i:4 ad:55
+i:3 ad:57
+i:2 ad:20
+i:1 ad:a1
+i:0 ad:94
+addr:555720a194
+addr:5557209f29
+i:0 ad:29
+i:1 ad:9f
+i:2 ad:20
+i:3 ad:57
+i:4 ad:55
+i:5 ad:00
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: Let's see...
+12The target string is: Let's see...
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: I}}áÛ ±∞Ù?`Tell me somethin. If you please me, I'll let you pass the test.
+i:0 can:49
+i:1 can:7d
+i:2 can:7d
+i:3 can:87
+i:4 can:f3
+i:5 can:ca
+i:6 can:b1
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î¥aê7V
+i:7 ad:00
+i:6 ad:00
+i:5 ad:56
+i:4 ad:37
+i:3 ad:90
+i:2 ad:61
+i:1 ad:b4
+i:0 ad:94
+addr:56379061b494
+addr:56379061b229
+i:0 ad:29
+i:1 ad:b2
+i:2 ad:61
+i:3 ad:90
+i:4 ad:37
+i:5 ad:56
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: You win
+12The target string is: You win
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: !¥âìF+N n/´Tell me somethin. If you please me, I'll let you pass the test.
+i:0 can:21
+i:1 can:b4
+i:2 can:89
+i:3 can:93
+i:4 can:46
+i:5 can:2b
+i:6 can:4e
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î%Ø“U
+i:7 ad:00
+i:6 ad:00
+i:5 ad:55
+i:4 ad:d2
+i:3 ad:af
+i:2 ad:25
+i:1 ad:14
+i:0 ad:94
+addr:55d2af251494
+addr:55d2af251229
+i:0 ad:29
+i:1 ad:12
+i:2 ad:25
+i:3 ad:af
+i:4 ad:d2
+i:5 ad:55
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: You win
+12The target string is: You win
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: A≥¿ÿE1Tell me somethin. If you please me, I'll let you pass the test.
+i:0 can:41
+i:1 can:b3
+i:2 can:c0
+i:3 can:d8
+i:4 can:45
+i:5 can:31
+i:6 can:54
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î$J*˙U
+i:7 ad:00
+i:6 ad:00
+i:5 ad:55
+i:4 ad:fa
+i:3 ad:2a
+i:2 ad:4a
+i:1 ad:24
+i:0 ad:94
+addr:55fa2a4a2494
+addr:55fa2a4a2229
+i:0 ad:29
+i:1 ad:22
+i:2 ad:4a
+i:3 ad:2a
+i:4 ad:fa
+i:5 ad:55
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: Let's see...
+12The target string is: Let's see...
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: ‰÷lq(°p*b7Tell me somethin. If you please me, I'll let you pass the test.
+i:0 can:e4
+i:1 can:d6
+i:2 can:1d
+i:3 can:6c
+i:4 can:71
+i:5 can:28
+i:6 can:a1
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: îD?≤fU
+i:7 ad:00
+i:6 ad:00
+i:5 ad:55
+i:4 ad:66
+i:3 ad:b2
+i:2 ad:3f
+i:1 ad:44
+i:0 ad:94
+addr:5566b23f4494
+addr:5566b23f4229
+i:0 ad:29
+i:1 ad:42
+i:2 ad:3f
+i:3 ad:b2
+i:4 ad:66
+i:5 ad:55
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: You win
+12The target string is: You win
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: rpLÒÆ)ıﬁ=Tell me somethin. If you please me, I'll let you pass the test.
+i:0 can:72
+i:1 can:70
+i:2 can:4c
+i:3 can:f1
+i:4 can:0f
+i:5 can:ae
+i:6 can:29
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î‰≠,ÍU
+i:7 ad:00
+i:6 ad:00
+i:5 ad:55
+i:4 ad:ea
+i:3 ad:2c
+i:2 ad:ad
+i:1 ad:e4
+i:0 ad:94
+addr:55ea2cade494
+addr:55ea2cade229
+i:0 ad:29
+i:1 ad:e2
+i:2 ad:ad
+i:3 ad:2c
+i:4 ad:ea
+i:5 ad:55
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: You win
+12The target string is: You win
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: ﬂf¡Ó<†µ≥~Tell me somethin. If you please me, I'll let you pass the test.
+i:0 can:df
+i:1 can:66
+i:2 can:c1
+i:3 can:ee
+i:4 can:18
+i:5 can:3c
+i:6 can:a0
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î$-¡ìU
+i:7 ad:00
+i:6 ad:00
+i:5 ad:55
+i:4 ad:93
+i:3 ad:c1
+i:2 ad:2d
+i:1 ad:24
+i:0 ad:94
+addr:5593c12d2494
+addr:5593c12d2229
+i:0 ad:29
+i:1 ad:22
+i:2 ad:2d
+i:3 ad:c1
+i:4 ad:93
+i:5 ad:55
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: Let's see...
+12The target string is: Let's see...
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: Y3Q„rvòÄ°œjTell me somethin. If you please me, I'll let you pass the test.
+i:0 can:59
+i:1 can:33
+i:2 can:51
+i:3 can:e3
+i:4 can:72
+i:5 can:76
+i:6 can:98
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î÷∏ŒU
+i:7 ad:00
+i:6 ad:00
+i:5 ad:00
+i:4 ad:55
+i:3 ad:ce
+i:2 ad:b8
+i:1 ad:d6
+i:0 ad:94
+addr:55ceb8d694
+addr:55ceb8d429
+i:0 ad:29
+i:1 ad:d4
+i:2 ad:b8
+i:3 ad:ce
+i:4 ad:55
+i:5 ad:00
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: Let's see...
+12The target string is: Let's see...
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: jDÉ2—8ù£qKTell me somethin. If you please me, I'll let you pass the test.
+i:0 can:6a
+i:1 can:44
+i:2 can:83
+i:3 can:32
+i:4 can:d1
+i:5 can:38
+i:6 can:9d
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: î‘uV
+i:7 ad:00
+i:6 ad:00
+i:5 ad:00
+i:4 ad:56
+i:3 ad:05
+i:2 ad:75
+i:1 ad:d4
+i:0 ad:94
+addr:560575d494
+addr:560575d229
+i:0 ad:29
+i:1 ad:d2
+i:2 ad:75
+i:3 ad:05
+i:4 ad:56
+i:5 ad:00
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: Let's see...
+12The target string is: Let's see...
+1The target string is: What's your name?
+2The target string is: Hello 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3The target string is: d=‘ïÇ0•ÄÅB´Tell me somethin. If you please me, I'll let you pass the test.
+i:0 can:64
+i:1 can:3d
+i:2 can:d4
+i:3 can:95
+i:4 can:82
+i:5 can:30
+i:6 can:a5
+4The target string is: First, tell me how long is your story.
+5The target string is: OK, let's get down to business.
+6The target string is: Damn it. What an awful story:
+7The target string is: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+8The target string is: îÑß¸,V
+i:7 ad:00
+i:6 ad:00
+i:5 ad:56
+i:4 ad:2c
+i:3 ad:fc
+i:2 ad:a7
+i:1 ad:84
+i:0 ad:94
+addr:562cfca78494
+addr:562cfca78229
+i:0 ad:29
+i:1 ad:82
+i:2 ad:a7
+i:3 ad:fc
+i:4 ad:2c
+i:5 ad:56
+i:6 ad:00
+i:7 ad:00
+9The target string is: I'll give you another chance.
+10The target string is: Let's see...
+11The target string is: You win
+12The target string is: You win
